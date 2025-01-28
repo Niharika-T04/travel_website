@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Start Your Trip</title>
+  <style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        scroll-behavior: smooth; 
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    header {
+        height: 80px;
+        width: 100%;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+
+    header .logo {
+        font-size: xx-large;
+        margin-left: 40px;
+        border: solid;
+        padding: 10px;
+    }
+
+    header ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin-right: 15px;
+    }
+
+    header ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    header ul li a:hover {
+        text-decoration: underline;
+        color: #ffd700;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .fake-header {
+        height: 80px; 
+    }
+
+    .hero {
+        height: 500px;
+        background: url('https://th.bing.com/th/id/R.3bdc0bb15f7f15fe8b489662b43438f0?rik=d0K2Kg65N%2fy8kQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f2%2f3%2ff%2f1503617-vertical-desktop-wallpaper-travel-1920x1080-hd-1080p.jpg&ehk=B%2bhCVOcaa5YqzMwG9UMlzpXh0EJ%2fJNWr8v7sFt9YWko%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+        color: black;
+        text-align: center;
+        padding-top: 200px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+
+    .hero .btn {
+        background: rgb(21, 81, 107);
+        color: white;
+        margin-top: 50px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap; 
+        
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
+        margin-top: 60px ;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    
+    #destinations {
+        color: black;
+    }
+
+    
+    #activities {
+        color: black;
+        padding-bottom: 10px;
+    }
+
+   
+    #contact {
+        padding: 40px 20px;
+        background-color: #333;
+        color: white;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    form button {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    form button:hover {
+        background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Start Your Trip</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home">
+        <div class="fake-header"></div>
+        <section class="hero">
+            <h1>Welcome to Our Travel Website</h1>
+            <a href="#destinations" class="btn">Book Now</a>
+        </section>
+    </div>
+
+    <div id="destinations">
+        <div class="fake-header"></div>
+        <section>
+            <h2>Popular Destinations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://www.hdwallpapers.in/download/manhattan_skyline_new_york_panorama-HD.jpg" alt="New York City">
+                    <h3>New York City</h3>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZJxMVkahaRU0C6cpiAoIcX-5Su8gTwsqRRw&s" alt="Paris">
+                    <h3>Paris</h3>
+                </div>
+                <div class="card">
+                    <img src="https://static1.squarespace.com/static/5b228bd689c172172ab88d9c/619931e8c248397e11d0e1e7/65dc26e9e47a9b6caacd191f/1721847328171/_DSF5280-Enhanced-NR.jpg?format=1500w" alt="Tokyo">
+                    <h3>Tokyo</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="activities">
+        <div class="fake-header"></div>
+        <section>
+            <h2>Featured Activities</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKk6criOWTt9vIo9p9Ptyf_FfO5yvsCxOkA&s" alt="City Tours">
+                    <h3>City Tours</h3>
+                    <p>Explore the city with guided tours and uncover hidden gems.</p>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.uHLHK_L5KbBOHUN12oJKegHaDs?w=316&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Adventure Activities">
+                    <h3>Adventure Activities</h3>
+                    <p>Experience thrilling adventures like hiking, rafting, and more.</p>
+                </div>
+                <div class="card">
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/1358046/TripDocument/1616489138_untitled_design_1.png" alt="Cultural Events">
+                    <h3>Cultural Events</h3>
+                    <p>Immerse yourself in the culture through festivals and local experiences.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="fake-header"></div>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to book a trip, please fill out the form below or contact us using the information provided.</p>
+            <form>
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: info@startyourtrip.com</p>
+                <p>Phone: 000-0000-000</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
